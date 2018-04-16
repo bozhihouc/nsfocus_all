@@ -118,7 +118,7 @@ def bug_main(bug_bug):
                 table.write(index,j,test_list[j])
                 print index
             index +=1
-    file.save(time.strftime('%Y-%m-%d-%h-%s.xls'))
+    file.save(time.strftime('%Y-%m-%d-%H-%S.xls'))
     time.sleep(2)
 
 def main():
