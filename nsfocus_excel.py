@@ -69,6 +69,7 @@ def bug_main(bug_bug):
         table.write(0, fist, data)
         fist += 1
     for i in range(len(bug_bug)):
+#    for i in range(1):
         #print u'当前进行第%s个' %(i+1)
         bug_n_r = r'trclass=".*?vuln_(.*?)"onclick.*?<spanstyle="color:.*?">(.*?)</span><!--<span'
         bug_n_re = re.compile(bug_n_r)
@@ -101,7 +102,21 @@ def bug_main(bug_bug):
             else:
                 bug_jie = u'无'
             if len(bug_c_list)!=0:
-                bug_cve = bug_c_list[0]
+                #print bug_c_list
+                if 'blank' in bug_c_list[0]:
+                    #print bug_c_list
+                    cvem = '>'+bug_c_list[0]+'</a>'
+                    #print cvem
+                    bug_cve_r = r'>(CVE.*?)</a>'
+                    bug_cve_re = re.compile(bug_cve_r)
+                    bug_cve_list = re.findall(bug_cve_re,cvem)
+                    #print bug_cve_list
+                    #print len(bug_cve_list)
+                    bug_cve = ','.join(bug_cve_list)
+                    #print bug_cve
+                else:
+                    #print bug_c_list
+                    bug_cve = bug_c_list[0]
             else:
                 bug_cve = u'无'
             #print vnln_hosts(bug_bug[i])[hs]+'Analogy'+bug_lv+bug_name+'Analogy'+bug_xin+'Analogy'+bug_jie+'Analogy'+bug_cve
