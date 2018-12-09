@@ -6,7 +6,7 @@
 # @Software: PyCharm
 
 '''将文件放在要处理的绿盟科技漏洞扫描综合报表内，自动识别index.html文件，会生成三个文件
-python nsfocus_excel.py
+在当前目录下执行python nsfocus_bug_excel.py
 需要导入第三方库xlwt库、BeautifulSoup库、lxml库
 '''
 import time
