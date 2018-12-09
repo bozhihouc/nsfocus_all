@@ -13,7 +13,7 @@
 
 > 输出的HTML报告必须包含 综合报表+主机报表
 <br/>RSAS V6.0
-<br/>执行python nsfocus_excel.py
+<br/>执行python nsfocus_passwd_excel.py
 <br/>会自行处理的的index.html文件
 <br/>输出格式：受影响主机+风险等级+漏洞名称+漏洞描述+修复建议+CVE编号
 
