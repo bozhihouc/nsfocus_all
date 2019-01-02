@@ -4,7 +4,6 @@
 # @Author  : 852782749@qq.com
 # @File    : nsfocus_bug_excel.py
 # @Software: PyCharm
-
 '''将文件放在要处理的绿盟科技漏洞扫描综合报表内，自动识别index.html文件，会生成三个文件
 在当前目录下执行python nsfocus_bug_excel.py
 需要导入第三方库xlwt库、BeautifulSoup库、lxml库
@@ -39,7 +38,6 @@ data_bug_list = data_list[4]
 #print data_bug_list
 buglv = ['high','middle','low']
 #buglv = ['high']
-
 def bug_level(bug_lv):
     #定义获取漏洞list(漏洞名称,详细信息,解决方案,CVE编号等,)
     # 正则bug_lv为风险等级分为high,middle,low分别对应风险等级高中低;
