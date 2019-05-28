@@ -132,8 +132,8 @@ def bug_main(bug_bug):
                     bug_cve = bug_c_list[0]
             else:
                 bug_cve = u'无'
-            print vnln_hosts(bug_bug[i])[hs]+'Analogy'+bug_lv+bug_name+'Analogy'+bug_xin+'Analogy'+bug_jie+'Analogy'+bug_cve
-            print(vnln_hosts(bug_bug[i])[hs]+bug_lv+bug_name+bug_xin+bug_jie+bug_cve+'\n')
+            #print vnln_hosts(bug_bug[i])[hs]+'Analogy'+bug_lv+bug_name+'Analogy'+bug_xin+'Analogy'+bug_jie+'Analogy'+bug_cve
+            #print(vnln_hosts(bug_bug[i])[hs]+bug_lv+bug_name+bug_xin+bug_jie+bug_cve+'\n')
             test_list = []
             test_list.append(vnln_hosts(bug_bug[i])[hs])
             test_list.append(bug_lv)
