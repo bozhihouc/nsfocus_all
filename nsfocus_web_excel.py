@@ -8,3 +8,5 @@ import sys
 
 reload(sys)
 sys.setdefaultencoding("utf-8")
+###  2021-04-26
+### 好多年没动过了，尝试下web报表，，忘了不少代码...哎...
